@@ -188,3 +188,8 @@ footer h5 {
     padding-left: 30px;
     color: black;
 }
+@media screen and (max-width: 480px) {
+    .image {
+        width: 250px;
+    }
+}
