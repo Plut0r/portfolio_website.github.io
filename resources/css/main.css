@@ -1,0 +1,190 @@
+/* Font-family */
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Nunito+Sans&family=Poppins&family=Roboto&family=Source+Sans+Pro&display=swap');
+
+/* custom variables */
+:root {
+    --main-white: #f0f0f0;
+    --main-blue: #45567d;
+    --main-red: #be3144;
+    --main-gray: #535353;
+    --gray: #303841;
+    --blue: #36454F;
+}
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Box sizing and font-sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/* Base Style */
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+h2, h3 {
+    color: black;
+    text-align: center;
+}
+h2 {
+    font-size: 4.2rem;
+}
+
+
+/* Header section */
+header .logo {
+    float: left;
+    padding-left: 10px;
+}
+header > nav {
+    float: right;
+}
+li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: var(--main-white);
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: var(--gray);
+    margin-left: -9px;
+    margin-right: -10px;
+}
+header a:hover {
+    background-color: var(--main-blue);
+}
+
+/* To prevent content overlay */
+main {
+    margin-top: 80px;
+}
+
+/* About me section */
+.about {
+    background-image: repeating-linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+   background-color: #000;
+    color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    margin-left: -9px;
+    margin-right: -9px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.about > h3 {
+    color: var(--main-red);
+    font-family: "Macondo", cursive;
+    margin-top: 2px;
+    font-size: 2.8rem;
+}
+.about > h2 {
+    font-size: 4.2rem;
+    color: var(--main-white);
+}
+.about p {
+    font-family: "Poppins", sans-serif;
+    color: var(--main-blue);
+    font-size: 2rem;
+}
+
+/* projects section */
+.project {
+    background-color: var(--main-blue);
+    padding-bottom: 35px;
+}
+.project h4 {
+    color: black;
+}
+.project > h2 {
+    color: white;
+    text-decoration: underline;
+   padding-top: 20px;
+}
+.img-container {
+    display: inline-flex;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+/* skill section */
+.icon {
+    color: white;
+    margin-left: 55px;
+    margin-right: 25px;
+}
+.skill {
+    background-color: black;
+    padding-bottom: 40px;
+}
+.skill > h2 {
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+/*Footer section */
+footer {
+    background-color: var(--gray);
+    padding-bottom: 80px;
+}
+footer h4 {
+    float: right;
+    padding-top: 30px;
+    padding-right: 30px;
+    color: black;
+}
+footer h5 {
+    float: left;
+    padding-top: 30px;
+    padding-left: 30px;
+    color: black;
+}
