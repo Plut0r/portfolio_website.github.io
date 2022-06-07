@@ -1,9 +1,9 @@
 function bigImg(e) {
-e.style.border = "1px solid black";
+e.style.border = "2px solid black";
 }
 
 function normalImg(e) {
-e.style.border = none;
+e.style.border = 'none';
 }
 
 
