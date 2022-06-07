@@ -1,10 +1,9 @@
 function bigImg(e) {
-e.style.width = "400px";
+e.style.border = "1px solid black";
 }
 
 function normalImg(e) {
-e.style.width = "350px";
-e.style.height = "350px";
+e.style.border = none;
 }
 
 
